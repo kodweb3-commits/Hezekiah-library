@@ -51,79 +51,100 @@
 </div>
 
 <div class="page-content" id="pageContent">
-<!-- ===== HERO ===== -->
-<section id="hero">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <div class="hero-badge"><span class="dot"></span> Obafemi Awolowo University</div>
-      <h1 class="hero-title">
-        Hezekiah Oluwasanmi <span class="accent">Library Website</span>
-      </h1>
-      <p class="hero-desc">
-        The Hezekiah Oluwasanmi Library supports teaching, learning, and research
-        at Obafemi Awolowo University through trusted collections, digital resources,
-        and welcoming study spaces.
-      </p>
-      <div class="hero-btns">
-        <a href="catalogue.html" class="btn btn-primary">
-          Explore Catalogue <i class="fa-solid fa-arrow-right"></i>
-        </a>
-        <a href="#register" class="btn btn-outline">
-          <i class="fa-solid fa-user-plus"></i> Register Free
-        </a>
-      </div>
-      <div class="hero-checks">
-        <span><i class="fa-solid fa-circle-check"></i> Easy to use</span>
-        <span><i class="fa-solid fa-circle-check"></i> Built for students</span>
-        <span><i class="fa-solid fa-circle-check"></i> Free to register</span>
-      </div>
-    </div>
-    <div class="hero-image-wrap">
-      <img class="hero-image" src="images/VIEW.jpg" alt="Hezekiah Oluwasanmi Library reading hall" />
-      <div class="hero-stat-card">
-        <div class="hero-stat-icon"><i class="fa-solid fa-user-group"></i></div>
-        <div>
-          <strong>10,000+</strong>
-          <span>Students & Researchers Served</span>
+<!-- ===== HERO SLIDER ===== -->
+<section id="hero" class="hero-slider">
+  <div class="hero-slides" id="heroSlides">
+
+    <div class="hero-slide active" style="background-image:url('images/library-view.jpg')">
+      <div class="hero-slide-overlay"></div>
+      <div class="container hero-slide-content">
+        <h1 class="hero-title">Hezekiah,<br>Oluwasanmi <span class="accent">Library</span></h1>
+         <p class="hero-desc">
+          Quiet reading halls, modern digital resources and welcoming spaces
+          designed to help every student and researcher do their best work.
+        </p>
+        <div class="hero-btns">
+          <a href="catalogue.html" class="btn btn-primary">Explore Catalogue <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#register" class="btn btn-outline">Register Free <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ===== FEATURES (icon grid) ===== -->
-<section id="icon-features">
-  <div class="container">
-    <div class="icon-features-grid">
-      <div class="icon-feature reveal">
-        <div class="icon-feature-icon"><i class="fa-solid fa-book"></i></div>
-        <h4>Book Catalogue</h4>
-        <p>Search and browse thousands of titles in seconds</p>
+    <div class="hero-slide" style="background-image:url('images/library-view.jpg')">
+      <div class="hero-slide-overlay"></div>
+      <div class="container hero-slide-content">
+        <h1 class="hero-title">A Space to Learn,<br>Grow & <span class="accent">Discover</span></h1>
+        <p class="hero-desc">
+          Quiet reading halls, modern digital resources and welcoming spaces
+          designed to help every student and researcher do their best work.
+        </p>
+        <div class="hero-btns">
+          <a href="collection.html" class="btn btn-primary">Explore Collections <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#register" class="btn btn-outline">Register Free <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
       </div>
-      <div class="icon-feature reveal reveal-delay-1">
-        <div class="icon-feature-icon"><i class="fa-solid fa-id-card"></i></div>
-        <h4>Membership</h4>
-        <p>Register free and get your own student account</p>
+    </div>
+
+    <div class="hero-slide" style="background-image:url('images/library-view.jpg')">
+      <div class="hero-slide-overlay"></div>
+      <div class="container hero-slide-content">
+        <h1 class="hero-title">Trusted Collections,<br>Endless <span class="accent">Discovery</span></h1>
+        <p class="hero-desc">
+          From research papers to rare archives, find everything you need to
+          support your studies — in person or online, any time.
+        </p>
+        <div class="hero-btns">
+          <a href="catalogue.html" class="btn btn-primary">Explore Catalogue <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="contact.html" class="btn btn-outline">Get Research Help <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
       </div>
-      <div class="icon-feature reveal reveal-delay-2">
-        <div class="icon-feature-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-        <h4>Borrowing History</h4>
-        <p>Track loans, renewals and due dates from your dashboard</p>
-      </div>
-      <div class="icon-feature reveal">
-        <div class="icon-feature-icon"><i class="fa-solid fa-door-open"></i></div>
-        <h4>Reading Rooms</h4>
-        <p>Reserve quiet study spaces ahead of time</p>
-      </div>
-      <div class="icon-feature reveal reveal-delay-1">
-        <div class="icon-feature-icon"><i class="fa-solid fa-cloud"></i></div>
-        <h4>Digital Library</h4>
-        <p>Access e-books and research databases anywhere</p>
-      </div>
-      <div class="icon-feature reveal reveal-delay-2">
-        <div class="icon-feature-icon"><i class="fa-solid fa-chart-line"></i></div>
-        <h4>Recommendations</h4>
-        <p>Get reading suggestions picked just for you</p>
+    </div>
+
+  </div>
+
+  <button class="hero-arrow hero-arrow-left" id="heroPrev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="hero-arrow hero-arrow-right" id="heroNext" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+
+  <div class="hero-dots" id="heroDots">
+    <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+    <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+    <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- Floating feature bar, overlapping the bottom of the slider -->
+  <div class="hero-features-bar">
+    <div class="container">
+      <div class="icon-features-grid">
+        <div class="icon-feature reveal">
+          <div class="icon-feature-icon"><i class="fa-solid fa-book"></i></div>
+          <h4>Book Catalogue</h4>
+          <p>Search and browse thousands of titles in seconds</p>
+        </div>
+        <div class="icon-feature reveal reveal-delay-1">
+          <div class="icon-feature-icon"><i class="fa-solid fa-id-card"></i></div>
+          <h4>Membership</h4>
+          <p>Register free and get your own student account</p>
+        </div>
+        <div class="icon-feature reveal reveal-delay-2">
+          <div class="icon-feature-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <h4>Borrowing History</h4>
+          <p>Track loans, renewals and due dates from your dashboard</p>
+        </div>
+        <div class="icon-feature reveal">
+          <div class="icon-feature-icon"><i class="fa-solid fa-door-open"></i></div>
+          <h4>Reading Rooms</h4>
+          <p>Reserve quiet study spaces ahead of time</p>
+        </div>
+        <div class="icon-feature reveal reveal-delay-1">
+          <div class="icon-feature-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h4>Digital Library</h4>
+          <p>Access e-books and research databases anywhere</p>
+        </div>
+        <div class="icon-feature reveal reveal-delay-2">
+          <div class="icon-feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Recommendations</h4>
+          <p>Get reading suggestions picked just for you</p>
+        </div>
       </div>
     </div>
   </div>
@@ -514,6 +535,56 @@
 
 </div>
 <script src="script.js"></script>
+<script>
+/* ===== Hero slider ===== */
+(function () {
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots = document.querySelectorAll('.hero-dot');
+  var prevBtn = document.getElementById('heroPrev');
+  var nextBtn = document.getElementById('heroNext');
+  if (!slides.length) return;
+
+  var current = 0;
+  var timer = null;
+  var AUTOPLAY_MS = 6000;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current] && dots[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current] && dots[current].classList.add('active');
+  }
+
+  function next() { goTo(current + 1); }
+  function prev() { goTo(current - 1); }
+
+  function startAutoplay() {
+    stopAutoplay();
+    timer = setInterval(next, AUTOPLAY_MS);
+  }
+  function stopAutoplay() {
+    if (timer) clearInterval(timer);
+  }
+
+  nextBtn && nextBtn.addEventListener('click', function () { next(); startAutoplay(); });
+  prevBtn && prevBtn.addEventListener('click', function () { prev(); startAutoplay(); });
+  dots.forEach(function (dot) {
+    dot.addEventListener('click', function () {
+      goTo(parseInt(dot.getAttribute('data-slide'), 10));
+      startAutoplay();
+    });
+  });
+
+  var slider = document.querySelector('.hero-slider');
+  if (slider) {
+    slider.addEventListener('mouseenter', stopAutoplay);
+    slider.addEventListener('mouseleave', startAutoplay);
+  }
+
+  startAutoplay();
+})();
+</script>
 <script>
 /* Safety net: if script.js fails to load or throws before the
    scroll-reveal observer attaches, force every .reveal section

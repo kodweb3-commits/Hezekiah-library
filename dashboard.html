@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>My Dashboard — Hezekiah Oluwasanmi Library</title>
+<link rel="shortcut icon" href="images/oau_logo_eb5tgl.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ===== TOP NAVBAR ===== -->
+<nav class="site-nav" id="siteNav">
+  <div class="site-nav-inner">
+    <a href="index.html" class="site-nav-brand">
+      <span class="site-nav-brand-icon"><img src="images/oau_logo_eb5tgl.png" alt="Hezekiah Oluwasanmi Library logo" /></span>
+      <span class="site-nav-brand-text"><strong>Hezekiah Oluwasanmi Library</strong><span>Obafemi Awolowo University</span></span>
+    </a>
+    <div class="site-nav-links" id="siteNavLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="collection.html">Collection</a>
+      <a href="features.html">Features</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="site-nav-actions">
+      <a href="#" class="site-nav-login" id="logoutLink">Log out</a>
+      <a href="dashboard.html" class="site-nav-cta">Dashboard</a>
+      <button class="site-nav-toggle" id="siteNavToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile dropdown -->
+<div class="site-nav-mobile" id="siteNavMobile">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="collection.html">Collection</a>
+  <a href="features.html">Features</a>
+  <a href="contact.html">Contact</a>
+  <a href="#" id="logoutLinkMobile">Log out</a>
+</div>
+
+<div class="page-content" id="pageContent">
+
+<!-- ===== PAGE HEADER ===== -->
+<header class="page-header dashboard-page-header">
+  <div class="container">
+    <div class="section-tag"><i class="fa-solid fa-gauge"></i> My Dashboard</div>
+    <h1 id="welcomeHeading">Welcome Back</h1>
+    <p id="welcomeSub">Here's a quick look at your account.</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Dashboard</span>
+    </div>
+  </div>
+</header>
+
+<!-- Loading state -->
+<section class="section" id="loadingState">
+  <div class="container" style="text-align:center;">
+    <p><i class="fa-solid fa-spinner fa-spin"></i> Loading your account…</p>
+  </div>
+</section>
+
+<!-- Error / not logged in state -->
+<section class="section" id="errorState" style="display:none;">
+  <div class="container" style="text-align:center;">
+    <p id="errorMsg">You need to be logged in to view this page.</p>
+    <a href="login.html" class="btn btn-primary" style="margin-top:16px;">Go to Log In</a>
+  </div>
+</section>
+
+<!-- ===== DASHBOARD CONTENT (hidden until data loads) ===== -->
+<div id="dashboardContent" style="display:none;">
+
+  <section class="dashboard-section">
+    <div class="container dashboard-layout">
+      <aside class="dashboard-sidebar reveal">
+        <div class="dashboard-sidebar-top">
+          <div class="dashboard-avatar"><img id="profileImage" src="images/oau_logo_eb5tgl.png" alt="Library member avatar" /></div>
+          <label class="profile-image-upload" for="profileImageInput"><i class="fa-solid fa-camera"></i> Change photo</label>
+          <input id="profileImageInput" class="profile-image-input" type="file" accept="image/png,image/jpeg,image/webp" />
+          <span class="dashboard-status"><i class="fa-solid fa-circle"></i> Active member</span>
+          <h2 id="profileCardName">Your Profile</h2>
+          <p>Personal account information</p>
+        </div>
+        <div class="dashboard-sidebar-details">
+          <div class="sidebar-detail"><i class="fa-solid fa-user"></i><div><span>Full Name</span><strong id="infoName">—</strong></div></div>
+          <div class="sidebar-detail"><i class="fa-solid fa-id-card"></i><div><span>Student ID</span><strong id="infoStudentId">—</strong></div></div>
+          <div class="sidebar-detail"><i class="fa-solid fa-envelope"></i><div><span>Email</span><strong id="infoEmail">—</strong></div></div>
+          <div class="sidebar-detail"><i class="fa-solid fa-building-columns"></i><div><span>Department</span><strong id="infoDepartment">—</strong></div></div>
+          <div class="sidebar-detail"><i class="fa-solid fa-graduation-cap"></i><div><span>Level</span><strong id="infoLevel">—</strong></div></div>
+          <div class="sidebar-detail"><i class="fa-solid fa-bookmark"></i><div><span>Preferred Genre</span><strong id="infoGenre">—</strong></div></div>
+        </div>
+        <a href="contact.html" class="dashboard-sidebar-help"><i class="fa-solid fa-headset"></i> Need research help?</a>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="dashboard-welcome reveal">
+          <div>
+            <span class="dashboard-eyebrow"><i class="fa-solid fa-sparkles"></i> Your library space</span>
+            <h2>Everything you need to keep learning.</h2>
+            <p>Explore collections, manage your reading journey, and stay connected to the library.</p>
+            <a href="collection.html" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Explore Collections</a>
+          </div>
+        </div>
+
+        <div class="dashboard-main-heading reveal">
+          <div><span class="dashboard-kicker">Account overview</span><h2>Activity at a glance</h2></div>
+          <span class="dashboard-date"><i class="fa-regular fa-calendar"></i> Member account</span>
+        </div>
+        <div class="dashboard-stats-grid">
+          <div class="dashboard-stat-card reveal"><div class="dashboard-stat-icon"><i class="fa-solid fa-book-open"></i></div><strong id="statBorrowed">0</strong><span>Books borrowed</span></div>
+          <div class="dashboard-stat-card reveal reveal-delay-1"><div class="dashboard-stat-icon"><i class="fa-solid fa-bookmark"></i></div><strong>5</strong><span>Borrow limit</span></div>
+          <div class="dashboard-stat-card reveal reveal-delay-2"><div class="dashboard-stat-icon"><i class="fa-solid fa-graduation-cap"></i></div><strong id="statLevel">—</strong><span>Current level</span></div>
+          <div class="dashboard-stat-card reveal"><div class="dashboard-stat-icon"><i class="fa-solid fa-calendar-check"></i></div><strong id="statMember">—</strong><span>Member since</span></div>
+        </div>
+
+        <div class="dashboard-main-heading dashboard-actions-heading reveal"><div><span class="dashboard-kicker">Library services</span><h2>What would you like to do?</h2></div></div>
+        <div class="dashboard-actions-grid">
+          <a href="collection.html" class="dashboard-action-card reveal"><div class="icon-feature-icon"><i class="fa-solid fa-book"></i></div><h4>Browse Collections</h4><p>Search books, journals, and digital resources.</p><i class="fa-solid fa-arrow-right action-arrow"></i></a>
+          <a href="features.html" class="dashboard-action-card reveal reveal-delay-1"><div class="icon-feature-icon"><i class="fa-solid fa-door-open"></i></div><h4>Reserve a Reading Room</h4><p>Book a quiet study space ahead of time.</p><i class="fa-solid fa-arrow-right action-arrow"></i></a>
+          <a href="contact.html" class="dashboard-action-card reveal reveal-delay-2"><div class="icon-feature-icon"><i class="fa-solid fa-headset"></i></div><h4>Get Research Help</h4><p>Message a librarian for citation or sourcing help.</p><i class="fa-solid fa-arrow-right action-arrow"></i></a>
+        </div>
+      </main>
+    </div>
+  </section>
+
+</div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+          <div class="nav-logo-text">
+            <strong style="color:white">Hezekiah Oluwasanmi Library</strong>
+            <span>Est. 2026 · Ile-Ife</span>
+          </div>
+        </a>
+        <p>
+          A premier knowledge institution dedicated to empowering readers,
+          students, and researchers across Nigeria and beyond.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="catalogue.html">Book Catalogue</a></li>
+          <li><a href="collection.html">Collections</a></li>
+          <li><a href="index.html#featured">Featured Books</a></li>
+          <li><a href="index.html#register">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="service.html">Book Borrowing</a></li>
+          <li><a href="service.html">Reading Rooms</a></li>
+          <li><a href="service.html">Digital Library</a></li>
+          <li><a href="service.html">Research Help</a></li>
+          <li><a href="service.html">Workshops</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Obafemi Awolowo University, Ile-Ife</a></li>
+          <li><a href="tel:+2349056126766">+234 905 612 6766</a></li>
+          <li><a href="mailto:info@hezekiaholuwasanmilibrary.ng">info@hezekiaholuwasanmilibrary.ng</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <a href="index.html">Hezekiah Oluwasanmi Library</a>. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script src="script.js"></script>
+<script>
+setTimeout(function () {
+  document.querySelectorAll('.reveal:not(.visible)').forEach(function (el) {
+    el.classList.add('visible');
+  });
+}, 1500);
+</script>
+
+<!-- ===== DASHBOARD LOGIC ===== -->
+<script>
+const loadingState = document.getElementById("loadingState");
+const errorState = document.getElementById("errorState");
+const errorMsg = document.getElementById("errorMsg");
+const dashboardContent = document.getElementById("dashboardContent");
+
+function formatDate(dateStr) {
+  if (!dateStr) return "—";
+  const d = new Date(dateStr);
+  return d.toLocaleDateString(undefined, { year: "numeric", month: "long" });
+}
+
+function loadDashboard() {
+  const session = JSON.parse(localStorage.getItem("librarySession") || "null");
+  const user = JSON.parse(localStorage.getItem("libraryMember") || "null");
+
+  if (!session || !user || session.email !== user.email) {
+    loadingState.style.display = "none";
+    errorMsg.textContent = "You need to be logged in to view this page.";
+    errorState.style.display = "block";
+    return;
+  }
+
+  const profileImage = document.getElementById("profileImage");
+  if (user.profileImage) {
+    profileImage.src = user.profileImage;
+  }
+  document.getElementById("profileImageInput").addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    if (!file.type.startsWith("image/")) {
+      alert("Please choose an image file.");
+      return;
+    }
+    if (file.size > 2 * 1024 * 1024) {
+      alert("Please choose an image smaller than 2 MB.");
+      event.target.value = "";
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function () {
+      profileImage.src = reader.result;
+      user.profileImage = reader.result;
+      localStorage.setItem("libraryMember", JSON.stringify(user));
+    };
+    reader.readAsDataURL(file);
+  });
+
+  document.getElementById("welcomeHeading").textContent = "Welcome Back, " + user.firstName + "!";
+  document.getElementById("welcomeSub").textContent = "Here's a quick look at your account.";
+
+  document.getElementById("statLevel").textContent = user.level || "—";
+  document.getElementById("statMember").textContent = formatDate(user.createdAt);
+
+  document.getElementById("infoName").textContent = user.firstName + " " + user.lastName;
+  document.getElementById("infoStudentId").textContent = user.studentId || "—";
+  document.getElementById("infoEmail").textContent = user.email || "—";
+  document.getElementById("infoDepartment").textContent = user.department || "—";
+  document.getElementById("infoLevel").textContent = user.level || "—";
+  document.getElementById("infoGenre").textContent = user.genre || "—";
+
+  loadingState.style.display = "none";
+  dashboardContent.style.display = "block";
+}
+
+function logout() {
+  localStorage.removeItem("librarySession");
+  window.location.href = "login.html";
+}
+
+document.getElementById("logoutLink").addEventListener("click", function (e) {
+  e.preventDefault();
+  logout();
+});
+document.getElementById("logoutLinkMobile").addEventListener("click", function (e) {
+  e.preventDefault();
+  logout();
+});
+
+loadDashboard();
+</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Log In — Hezekiah Oluwasanmi Library</title>
+<link rel="shortcut icon" href="images/oau_logo_eb5tgl.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ===== TOP NAVBAR ===== -->
+<nav class="site-nav" id="siteNav">
+  <div class="site-nav-inner">
+    <a href="index.html" class="site-nav-brand">
+      <span class="site-nav-brand-icon"><img src="images/oau_logo_eb5tgl.png" alt="Hezekiah Oluwasanmi Library logo" /></span>
+      <span class="site-nav-brand-text"><strong>Hezekiah Oluwasanmi Library</strong><span>Obafemi Awolowo University</span></span>
+    </a>
+    <div class="site-nav-links" id="siteNavLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="collection.html">Collection</a>
+      <a href="features.html">Features</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="site-nav-actions">
+      <a href="login.html" class="site-nav-login">Log in</a>
+      <a href="index.html#register" class="site-nav-cta">Get Started</a>
+      <button class="site-nav-toggle" id="siteNavToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile dropdown -->
+<div class="site-nav-mobile" id="siteNavMobile">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="collection.html">Collection</a>
+  <a href="features.html">Features</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html">Log in</a>
+  <a href="index.html#register" class="site-nav-cta">Get Started</a>
+</div>
+
+<div class="page-content" id="pageContent">
+
+<!-- ===== PAGE HEADER ===== -->
+<header class="page-header">
+  <div class="container">
+    <div class="section-tag"><i class="fa-solid fa-right-to-bracket"></i> Log In</div>
+    <h1>Welcome Back</h1>
+    <p>Sign in to reach your dashboard, borrowing history, and saved reading lists.</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Log In</span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== LOGIN ===== -->
+<section id="login" class="section">
+  <div class="container" style="max-width:480px;">
+    <div class="contact-form-wrap reveal">
+      <h3>Sign In to Your Account</h3>
+
+      <div class="auth-alert error" id="loginAlert" role="alert" style="display:none;align-items:flex-start;gap:10px;padding:13px 16px;border-radius:6px;font-size:.85rem;margin-bottom:16px;line-height:1.5;background:#fdecea;color:#c0392b;">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <span id="loginAlertMsg">Please check your email and password.</span>
+      </div>
+
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <div class="password-field" style="position:relative;">
+            <input type="password" id="loginPassword" placeholder="Your password" required style="padding-right:44px;" />
+            <button type="button" class="pw-toggle" data-target="loginPassword" aria-label="Show password" style="position:absolute;right:4px;top:4px;bottom:4px;width:38px;background:none;border:none;color:var(--text-muted);cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:6px;"><i class="fa-solid fa-eye"></i></button>
+          </div>
+        </div>
+        <div class="form-check" style="display:flex;justify-content:space-between;align-items:center;">
+          <span><input type="checkbox" id="rememberMe" /> Remember me</span>
+          <a href="#" style="font-size:.85rem;">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary contact-submit" id="loginSubmitBtn" style="width:100%;margin-top:8px;">
+          <i class="fa-solid fa-right-to-bracket"></i> Log In
+        </button>
+      </form>
+
+      <p style="text-align:center;margin-top:20px;font-size:.9rem;">
+        Don't have an account? <a href="index.html#register" style="color:var(--blue-600);font-weight:700;">Register free</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+          <div class="nav-logo-text">
+            <strong style="color:white">Hezekiah Oluwasanmi Library</strong>
+            <span>Est. 2026 · Ile-Ife</span>
+          </div>
+        </a>
+        <p>
+          A premier knowledge institution dedicated to empowering readers,
+          students, and researchers across Nigeria and beyond.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="catalogue.html">Book Catalogue</a></li>
+          <li><a href="collection.html">Collections</a></li>
+          <li><a href="index.html#featured">Featured Books</a></li>
+          <li><a href="index.html#register">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="service.html">Book Borrowing</a></li>
+          <li><a href="service.html">Reading Rooms</a></li>
+          <li><a href="service.html">Digital Library</a></li>
+          <li><a href="service.html">Research Help</a></li>
+          <li><a href="service.html">Workshops</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Obafemi Awolowo University, Ile-Ife</a></li>
+          <li><a href="tel:+2349056126766">+234 905 612 6766</a></li>
+          <li><a href="mailto:info@hezekiaholuwasanmilibrary.ng">info@hezekiaholuwasanmilibrary.ng</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <a href="index.html">Hezekiah Oluwasanmi Library</a>. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <i class="fa-solid fa-circle-check"></i>
+  <span id="toast-msg">Message sent successfully!</span>
+</div>
+
+<script src="script.js"></script>
+<script>
+setTimeout(function () {
+  document.querySelectorAll('.reveal:not(.visible)').forEach(function (el) {
+    el.classList.add('visible');
+  });
+}, 1500);
+</script>
+
+<!-- ===== LOGIN LOGIC ===== -->
+<script>
+const loginForm = document.getElementById("loginForm");
+const loginAlert = document.getElementById("loginAlert");
+const loginAlertMsg = document.getElementById("loginAlertMsg");
+const loginSubmitBtn = document.getElementById("loginSubmitBtn");
+
+function showLoginError(message) {
+  loginAlertMsg.textContent = message;
+  loginAlert.style.display = "flex";
+}
+
+loginForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  loginAlert.style.display = "none";
+
+  const email = document.getElementById("loginEmail").value.trim().toLowerCase();
+  const password = document.getElementById("loginPassword").value;
+
+  if (!email || !password) {
+    showLoginError("Please enter both your email and password.");
+    return;
+  }
+
+  const member = JSON.parse(localStorage.getItem("libraryMember") || "null");
+  if (!member || member.email !== email || member.password !== password) {
+    showLoginError("No account matches that email and password. Please register first or try again.");
+    return;
+  }
+
+  localStorage.setItem("librarySession", JSON.stringify({ email: member.email }));
+  window.location.href = "dashboard.html";
+});
+</script>
+</body>
+</html>

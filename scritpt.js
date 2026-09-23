@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>About Us — Hezekiah Oluwasanmi Library</title>
+<title>Our Collections — Hezekiah Oluwasanmi Library</title>
 <link rel="shortcut icon" href="images/oau_logo_eb5tgl.png" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -21,8 +21,8 @@
     </a>
     <div class="site-nav-links" id="siteNavLinks">
       <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="collection.html">Collection</a>
+      <a href="about.html">About</a>
+      <a href="collection.html" class="active">Collection</a>
       <a href="features.html">Features</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -39,8 +39,8 @@
 <!-- Mobile dropdown -->
 <div class="site-nav-mobile" id="siteNavMobile">
   <a href="index.html">Home</a>
-  <a href="about.html" class="active">About</a>
-  <a href="collection.html">Collection</a>
+  <a href="about.html">About</a>
+  <a href="collection.html" class="active">Collection</a>
   <a href="features.html">Features</a>
   <a href="contact.html">Contact</a>
   <a href="login.html">Log in</a>
@@ -52,143 +52,122 @@
 <!-- ===== PAGE HEADER ===== -->
 <header class="page-header">
   <div class="container">
-    <div class="section-tag"><i class="fa-solid fa-building-columns"></i> About Us</div>
-    <h1>Serving OAU's Community of Learners</h1>
-    <p>Get to know the story, mission, and people behind the Hezekiah Oluwasanmi Library.</p>
+    <div class="section-tag"><i class="fa-solid fa-layer-group"></i> Our Collections</div>
+    <h1>Explore Every Corner of the Library</h1>
+    <p>From peer-reviewed research to rare archives, browse what's available across print and digital formats.</p>
     <div class="breadcrumb">
-      <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>About</span>
+      <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Collection</span>
     </div>
   </div>
 </header>
 
-<!-- ===== ABOUT ===== -->
-<section id="about">
+<!-- ===== COLLECTIONS GRID ===== -->
+<section id="collections" class="section">
   <div class="container">
-    <div class="about-grid">
-      <div class="about-image-wrap reveal">
-        <img class="about-image-main" src="images/images (4).jpg" alt="Library interior" />
-        <div class="about-image-badge">
-          <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
-          <div>
-            <strong>Hezekiah Oluwasanmi Library</strong>
-            <span>Obafemi Awolowo University</span>
-          </div>
-        </div>
-        <div class="about-image-accent"></div>
+    <div class="reveal">
+      <div class="section-tag"><i class="fa-solid fa-books"></i> Browse by Type</div>
+      <h2 class="section-title">Beyond Books</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">
+        Our collections extend far beyond printed books. Discover journals, research papers,
+        magazines, and digital resources curated for every type of researcher and reader.
+      </p>
+    </div>
+    <div class="collections-grid">
+      <div class="collection-card reveal">
+        <div class="collection-icon"><i class="fa-solid fa-microscope"></i></div>
+        <h3>Research Papers</h3>
+        <p>Peer-reviewed academic papers spanning sciences, humanities, and technology.</p>
+        <span class="count">3,200+ Papers</span>
       </div>
-      <div class="reveal reveal-delay-1">
-        <div class="section-tag">
-          <i class="fa-solid fa-book-open"></i> Our Story
-        </div>
-        <h2 class="section-title">Built for Curious Minds, <span class="accent">for Over Decades</span></h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">
-          Named after Chief Hezekiah Oluwasanmi, former Vice-Chancellor of Obafemi
-          Awolowo University, the library has grown from a modest campus reading
-          room into one of Nigeria's leading academic libraries — home to vast print
-          collections, digital archives, and quiet spaces built for focus.
-        </p>
-        <div class="about-pillars">
-          <div class="pillar">
-            <div class="pillar-icon"><i class="fa-solid fa-bullseye"></i></div>
-            <h4>Our Mission</h4>
-            <p>Accessible knowledge for every student, researcher, and lifelong learner.</p>
-          </div>
-          <div class="pillar">
-            <div class="pillar-icon"><i class="fa-solid fa-eye"></i></div>
-            <h4>Our Vision</h4>
-            <p>A trusted center for learning, innovation, and discovery.</p>
-          </div>
-          <div class="pillar">
-            <div class="pillar-icon"><i class="fa-solid fa-handshake"></i></div>
-            <h4>Our Community</h4>
-            <p>A welcoming space where curious minds explore ideas together.</p>
-          </div>
-          <div class="pillar">
-            <div class="pillar-icon"><i class="fa-solid fa-wifi"></i></div>
-            <h4>Digital Access</h4>
-            <p>Free Wi-Fi and online resources, available anytime, anywhere.</p>
-          </div>
-        </div>
+      <div class="collection-card reveal reveal-delay-1">
+        <div class="collection-icon"><i class="fa-solid fa-newspaper"></i></div>
+        <h3>Magazines</h3>
+        <p>Current and archival issues of local and international magazines.</p>
+        <span class="count">450+ Titles</span>
       </div>
+      <div class="collection-card reveal reveal-delay-2">
+        <div class="collection-icon"><i class="fa-solid fa-scroll"></i></div>
+        <h3>Academic Journals</h3>
+        <p>Subscriptions to leading academic journals in all major disciplines.</p>
+        <span class="count">1,800+ Issues</span>
+      </div>
+      <div class="collection-card reveal">
+        <div class="collection-icon"><i class="fa-solid fa-tablet-screen-button"></i></div>
+        <h3>Digital Resources</h3>
+        <p>E-books, audiobooks, and online databases accessible 24/7.</p>
+        <span class="count">8,500+ Items</span>
+      </div>
+      <div class="collection-card reveal reveal-delay-1">
+        <div class="collection-icon"><i class="fa-solid fa-film"></i></div>
+        <h3>Multimedia</h3>
+        <p>Educational DVDs, documentaries, and multimedia learning resources.</p>
+        <span class="count">600+ Titles</span>
+      </div>
+      <div class="collection-card reveal reveal-delay-2">
+        <div class="collection-icon"><i class="fa-solid fa-map"></i></div>
+        <h3>Maps & Archives</h3>
+        <p>Historical maps, government records, and rare archival collections.</p>
+        <span class="count">900+ Items</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="catalogue.html" class="btn btn-outline-light">
+        Search the Full Catalogue <i class="fa-solid fa-arrow-right"></i>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ===== QUICK FACTS ===== -->
+<!-- ===== COLLECTION STATS ===== -->
 <section class="stats-strip">
   <div class="container stats-strip-grid">
     <div class="stat-block reveal">
       <strong>60,000+</strong>
-      <span>Print & Digital Volumes</span>
+      <span>Total Volumes</span>
     </div>
     <div class="stat-block reveal reveal-delay-1">
-      <strong>10,000+</strong>
-      <span>Students & Researchers Served</span>
+      <strong>3,200+</strong>
+      <span>Research Papers</span>
     </div>
     <div class="stat-block reveal reveal-delay-2">
-      <strong>500+</strong>
-      <span>Reading Room Seats</span>
+      <strong>8,500+</strong>
+      <span>Digital Items</span>
     </div>
     <div class="stat-block reveal">
-      <strong>24/7</strong>
-      <span>Digital Resource Access</span>
+      <strong>900+</strong>
+      <span>Archival Records</span>
     </div>
   </div>
 </section>
 
-<!-- ===== WHAT WE OFFER ===== -->
+<!-- ===== HOW BORROWING WORKS ===== -->
 <section id="icon-features" class="section">
   <div class="container">
     <div class="reveal" style="text-align:center;margin-bottom:16px;">
-      <div class="section-tag" style="margin-inline:auto;"><i class="fa-solid fa-layer-group"></i> What We Offer</div>
-      <h2 class="section-title">Why Students & Researchers Choose Us</h2>
+      <div class="section-tag" style="margin-inline:auto;"><i class="fa-solid fa-route"></i> Getting Access</div>
+      <h2 class="section-title">How Borrowing Works</h2>
     </div>
-    <div class="icon-features-grid">
+    <div class="icon-features-grid" style="grid-template-columns:repeat(3,1fr);">
       <div class="icon-feature reveal">
-        <div class="icon-feature-icon"><i class="fa-solid fa-book"></i></div>
-        <h4>Vast Collections</h4>
-        <p>Books, journals, and archives across every discipline.</p>
+        <div class="icon-feature-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <h4>1. Browse & Search</h4>
+        <p>Use the catalogue to find a title by subject, author, or keyword.</p>
       </div>
       <div class="icon-feature reveal reveal-delay-1">
-        <div class="icon-feature-icon"><i class="fa-solid fa-id-card"></i></div>
-        <h4>Easy Membership</h4>
-        <p>Register free as a student, staff, or public member.</p>
+        <div class="icon-feature-icon"><i class="fa-solid fa-bookmark"></i></div>
+        <h4>2. Reserve or Visit</h4>
+        <p>Reserve online or head straight to the shelf with your item's location.</p>
       </div>
       <div class="icon-feature reveal reveal-delay-2">
-        <div class="icon-feature-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-        <h4>Extended Hours</h4>
-        <p>Open early to late so you can study on your schedule.</p>
-      </div>
-      <div class="icon-feature reveal">
-        <div class="icon-feature-icon"><i class="fa-solid fa-door-open"></i></div>
-        <h4>Quiet Study Spaces</h4>
-        <p>Dedicated reading halls for focused, distraction-free work.</p>
-      </div>
-      <div class="icon-feature reveal reveal-delay-1">
-        <div class="icon-feature-icon"><i class="fa-solid fa-cloud"></i></div>
-        <h4>Digital Resources</h4>
-        <p>E-books, databases, and journals accessible online.</p>
-      </div>
-      <div class="icon-feature reveal reveal-delay-2">
-        <div class="icon-feature-icon"><i class="fa-solid fa-chart-line"></i></div>
-        <h4>Research Support</h4>
-        <p>Librarian-led help for citations, sourcing, and reviews.</p>
+        <div class="icon-feature-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        <h4>3. Borrow & Enjoy</h4>
+        <p>Check out at the front desk with your membership card and get reading.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ===== CTA ===== -->
-<section class="section" style="padding-top:0;">
-  <div class="container" style="text-align:center;">
-    <h2 class="section-title">Ready to Get Started?</h2>
-    <p class="section-subtitle" style="margin:0 auto 28px;">
-      Join thousands of students and researchers already using the library today.
-    </p>
-    <a href="index.html#register" class="btn btn-primary">
-      Register Free <i class="fa-solid fa-arrow-right"></i>
-    </a>
+    <div style="text-align:center;margin-top:8px;">
+      <a href="index.html#register" class="btn btn-primary">Register Free to Borrow <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
   </div>
 </section>
 
@@ -200,8 +179,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="nav-logo">
-          <div class="nav-logo-icon">
-            <link rel="shortcut icon" href="images/oau_logo_eb5tgl.png" type="image/x-icon"></i></div>
+          <div class="nav-logo-icon"><i class="fa-solid fa-book-open-reader"></i></div>
           <div class="nav-logo-text">
             <strong style="color:white">Hezekiah Oluwasanmi Library</strong>
             <span>Est. 2026 · Ile-Ife</span>
